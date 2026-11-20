@@ -9,10 +9,9 @@ Eighteen recent survey papers on generative AI (agents, memory, tool and skill u
 | Survey spreadsheet (titles linked to PDFs) | [`llm_surveys_2026.xlsx`](llm_surveys_2026.xlsx), [`.csv`](llm_surveys_2026.csv) |
 | Original article  | [`medium_article`](https://medium.com/@yashu.paladugu/eighteen-fresh-surveys-one-message-agents-are-loops-and-loops-need-gates-bb8653937986?postPublishedType=initial) |
 | Slide deck | [`LLM_Surveys_2026.pptx`](LLM_Surveys_2026.pptx), [`.pdf`](LLM_Surveys_2026.pdf) |
-| Narrated video (about 22.7 min) | [`LLM_Surveys_2026.mp4`](LLM_Surveys_2026.mp4) |
-| Narration script | [`slides/slides.json`](slides/slides.json) (field `narr`) |
 | Figures | [`figures/`](figures) |
-| Build code | [`scripts/`](scripts) |
+| Video | [`You_tube_video_explaining`](Llm surveys 2026.MP4) |
+
 
 
 ## The surveys
