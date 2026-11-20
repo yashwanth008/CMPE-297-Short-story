@@ -6,20 +6,14 @@ Eighteen recent survey papers on generative AI (agents, memory, tool and skill u
 
 | Item | File |
 |---|---|
-| Survey spreadsheet (titles linked to PDFs) | [`data/llm_surveys_2026.xlsx`](data/llm_surveys_2026.xlsx), [`.csv`](data/llm_surveys_2026.csv) |
-| Original article (written from scratch for Medium) | [`article/medium_article.md`](article/medium_article.md) |
-| Slide deck | [`slides/LLM_Surveys_2026.pptx`](slides/LLM_Surveys_2026.pptx), [`.pdf`](slides/LLM_Surveys_2026.pdf) |
-| Narrated video (about 22.7 min) | [`video/LLM_Surveys_2026.mp4`](video/LLM_Surveys_2026.mp4) |
+| Survey spreadsheet (titles linked to PDFs) | [`llm_surveys_2026.xlsx`](llm_surveys_2026.xlsx), [`.csv`](llm_surveys_2026.csv) |
+| Original article  | [`medium_article`](https://medium.com/@yashu.paladugu/eighteen-fresh-surveys-one-message-agents-are-loops-and-loops-need-gates-bb8653937986?postPublishedType=initial) |
+| Slide deck | [`LLM_Surveys_2026.pptx`](LLM_Surveys_2026.pptx), [`.pdf`](LLM_Surveys_2026.pdf) |
+| Narrated video (about 22.7 min) | [`LLM_Surveys_2026.mp4`](LLM_Surveys_2026.mp4) |
 | Narration script | [`slides/slides.json`](slides/slides.json) (field `narr`) |
 | Figures | [`figures/`](figures) |
 | Build code | [`scripts/`](scripts) |
 
-### Publication links
-
-- Medium article: **PENDING** (to be published from the author's account)
-- SlideShare deck: **PENDING**
-- YouTube video: **PENDING**
-- Course spreadsheet entry: **PENDING**
 
 ## The surveys
 
@@ -63,21 +57,5 @@ Related but outside scope: Agent-as-a-Judge (Jan 2026), and two preprints.org su
 | Safety | SAVER | Substrate, Adaptation, Violation, Exposure, Response |
 | Safety | Isolation | 5 boundaries |
 
-## Honest notes and limitations
 
-- **Date window and the "2025" rule.** The brief asked for surveys from the last 3 to 6 months and, separately, for 2025 papers. Today is 19 Nov 2026, so I followed the date window. One entry is a 2025 survey revised in 2026. Two entries (7 May and 14 May 2026) sit slightly before a strict six-month cutoff.
-- **Depth of reading.** The spreadsheet column "What I read" states whether I read full text (the first ~100k characters of long PDFs), a summary page, or only the abstract. Summaries of abstract-only papers stay at abstract level.
-- **Evaluation coverage** is thin: only one evaluation-focused survey fell inside the window.
-- **Figures** are my diagrams of each survey's taxonomy. The speed-up chart plots numbers the rollout survey reports against different baselines and is not a ranking. The "dead groups" curve is my own calculation.
-- **Video narration is synthetic speech** (Kokoro TTS), not a human recording.
-- Nothing here is a substitute for reading the papers.
-
-## Rebuild
-
-```
-pip install matplotlib openpyxl python-pptx kokoro-onnx soundfile
-python scripts/make_figures.py && python scripts/content.py && python scripts/make_table.py
-node scripts/make_deck.js          # needs pptxgenjs, sharp
-python scripts/make_audio.py       # needs kokoro model files
-bash scripts/make_video.sh
 ```
